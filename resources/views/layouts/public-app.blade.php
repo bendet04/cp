@@ -152,7 +152,7 @@
             <table cellpadding="0" cellspacing="0" border="0" width="100%" class="menu_slide_header_table">
                 <tr>
                     <td align="left">
-                        <a href="home"><img src="{{asset('storage/images/logo.png')}}" style="max-height:50px" /></a>
+                        <a href="/"><img src="{{asset('storage/images/logo.png')}}" style="max-height:50px" /></a>
                     </td>
                     <td align="right" style="vertical-align:top">
                         <img src="{{asset('storage/images/menu_icon_m2b.png')}}" class="menu_icon_img"
@@ -317,7 +317,7 @@
                             </a>
                         </td>
                         <td class="tdheaderm tdheaderm1">
-                            <a href="home"><img src="{{asset('storage/images/logo.png')}}" style="max-width:120px"
+                            <a href="/"><img src="{{asset('storage/images/logo.png')}}" style="max-width:120px"
                                     class="headermlogo" /></a>
                         </td>
                         <td class="tdheaderm tdheaderm3">
