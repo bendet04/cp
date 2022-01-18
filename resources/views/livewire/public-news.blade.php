@@ -105,7 +105,7 @@
                                 </div>
                                 <div class="producttxtdiv">
                                     <div class="vm">
-                                        <div class="page_title7">{{$berita->category->name}}</div>
+                                        <div class="page_title7">{{$berita->name}}</div>
                                     </div>
                                 </div>
                             </div>
