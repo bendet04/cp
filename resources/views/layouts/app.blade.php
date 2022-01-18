@@ -44,6 +44,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('products') }}">{{ __('Produk') }}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('product-category') }}">{{ __('Kategory Produk') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('news-category') }}">{{ __('Kategory Berita') }}</a>
+                        </li>
                         @endguest
                     </ul>
 
