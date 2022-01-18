@@ -82,10 +82,7 @@
             return true;
         }
     </script>
-
-
     <script src="{{asset('js/activeheader.js?date=20200321')}}"></script>
-
     <script>
         jQuery(document).ready(function ($) {
             var menu_icon_flag = 0;
@@ -139,10 +136,7 @@
         });
     </script>
 </head>
-
-
 <body>
-
     <div class="">
         <div class="wa_float_icon">
             <div class="displayd"><a href="https://wa.me/6287773000454" target="_blank"><img
@@ -152,7 +146,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="menu_slide" id="menu_slide">
         <div class="menuheaderpoint">
@@ -178,56 +171,20 @@
                 }
             </script>
 
-            <div class="menu_point_dis">
-                <form name="formsearch2" id="formsearch2" method="get" action="/product">
-                    <div class="header_search_box borderradius5" align="left">
-                        <input type="text" id="txtsearch2" class=" txtsearch search_input" name="txtsearch2" />
-                        <!--
-            -->
-                        <div class="btnsearch borderradius5 animation" onclick="searchclick2()">
-                            <div class="vm">
-
-                                Cari
-                            </div>
-                        </div>
-
-                        <script>
-                            function searchclick2() {
-                                var txtsearch = document.getElementById("txtsearch2").value;
-
-                                datalink = "product?txtsearch=" + encodeURI(txtsearch); //alert(datalink);
-                                document.location.href = datalink;
-                            }
-
-                            function txtsearchenter2(e) {
-                                if (e.keyCode === 13) {
-                                    e.preventDefault(); // Ensure it is only this code that run
-                                    searchclick2();
-                                }
-                            }
-                        </script>
-                    </div>
-                </form>
-            </div>
-
             <span class=""><a class="a_menutop" href="/">
                     <div class="menu_point animation">Beranda</div>
                 </a></span>
 
-            <span class=""><a class="a_menutop" href="category/stationary">
+            <span class=""><a class="a_menutop" href="/produk">
                     <div class="menu_point animation">Produk</div>
                 </a></span>
 
-            <span class=""><a class="a_menutop" href="category/promotion">
+            <span class=""><a class="a_menutop" href="/profil">
                     <div class="menu_point animation">Tentang Kami</div>
                 </a></span>
 
-            <span class=""><a class="a_menutop" href="contact">
-                    <div class="menu_point animation">Hubungi Kami</div>
-                </a></span>
-
             <div class="menu_point_dis">
-                <a href="https://www.facebook.com" target="_blank">
+                <a href="https://www.facebook.com/percetakan.hrafeeymediantara.3" target="_blank">
                     <div class="socmed_point2m borderradius5 animation">
                         <div class=""><img src="{{asset('storage/images/facebook_icon2.png')}}" /></div>
                     </div>
@@ -235,16 +192,6 @@
                 <a href="https://instagram.com/Harfeeydigital?igshid=n700f21pfeai" target="_blank">
                     <div class="socmed_point2m borderradius5 animation">
                         <div class=""><img src="{{asset('storage/images/instagram_icon2.png')}}" /></div>
-                    </div>
-                </a>
-                <a href="https://www.twitter.com" target="_blank">
-                    <div class="socmed_point2m borderradius5 animation">
-                        <div class=""><img src="{{asset('storage/images/twitter_icon2.png')}}" /></div>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com" target="_blank">
-                    <div class="socmed_point2m borderradius5 animation">
-                        <div class=""><img src="{{asset('storage/images/linkedin_icon2.png')}}" /></div>
                     </div>
                 </a>
                 <a href="https://wa.me/6287773000454" target="_blank">
@@ -255,7 +202,6 @@
             </div>
 
             <div style="height:23px"></div>
-
 
         </div>
 
@@ -294,14 +240,7 @@
             });
         });
     </script>
-    <script>
-        function searchbtnclick() {
-            document.getElementById("searchbtn").style.display = "none";
-            document.getElementById("header_search_box_id").style.display = "block";
-            document.getElementById("txtsearch").focus();
-        }
-    </script>
-
+   
     <div class="menudisplayd">
         <div class="header  animationall" id="menuid">
             <div class="headertop">
@@ -324,13 +263,9 @@
                                     <a href="https://www.facebook.com/percetakan.hrafeeymediantara.3" target="_blank"
                                         class="a_headersocmed"><img
                                             src="{{asset('storage/images/facebook_icon.png')}}" /></a>
-                                    <a href="https://www.twitter.com" target="_blank" class="a_headersocmed"><img
-                                            src="{{asset('storage/images/twitter_icon.png')}}" /></a>
                                     <a href="https://www.instagram.com/harfeey_mediantara_official/" target="_blank"
                                         class="a_headersocmed"><img
                                             src="{{asset('storage/images/instagram_icon.png')}}" /></a>
-                                    <a href="https://www.linkedin.com" target="_blank" class="a_headersocmed"><img
-                                            src="{{asset('storage/images/linkedin_icon.png')}}" /></a>
                                 </span>
                             </td>
                         </tr>
@@ -344,35 +279,24 @@
                             <a href="/"><img src="{{asset('storage/images/logo.png')}}" class="logo" /></a>
                         </td>
                         <td class="tdheader tdheader2">
-                            <form name="formsearch" id="formsearch" method="get" action="/product">
-                                <div class="header_search_box borderradius5" align="left">
-                                    <input type="text" id="txtsearch" class=" txtsearch search_input"
-                                        name="txtsearch" />
-                                </div>
-                            </form>
-                        </td>
-                        <td class="tdheader tdheader4">
-                            <a href="contact">
-                                <div class="headercontactbtn borderradius5 animationall">
-                                    <div class='vm'>Hubungi Kami</div>
-                                </div>
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="headerbottom">
-                <div class="container2">
-                    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="tableheaderbottom">
-                        <tr>
-                            <td class="tdheaderbottom tdheaderbottom3">
                                 <a href="/" class="a_menupoint center"><span class="menupoint">Beranda</span></a>
                                 <a href="/produk" class="a_menupoint"><span class="menupoint">Produk</span></a>
                                 <a href="/profil" class="a_menupoint"><span class="menupoint">Tentang Kami</span></a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                        </td>
+                        <td class="tdheader tdheader2">
+                            <div class="footer_socmed">
+                                <a href="https://www.facebook.com/percetakan.hrafeeymediantara.3" target="_blank"
+                                    class="a_footersocmed"><img
+                                        src="{{asset('storage/images/facebook_icon2.png')}}" /></a>
+                                <a href="https://www.instagram.com/harfeey_mediantara_official/" target="_blank"
+                                    class="a_footersocmed"><img
+                                        src="{{asset('storage/images/instagram_icon2.png')}}" /></a>
+                                <a href="https://wa.me/6287773000454" target="_blank" class="a_footersocmed"><img
+                                        src="{{asset('storage/images/wa_icon2.png')}}" /></a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="activefixedheader" id="activefixedheader"></div>
@@ -443,39 +367,23 @@
     </div>
     @endif
 
-
     <div class="homepart5">
         <div class="container2">
             <div class="padbot45">
                 <table cellpadding="0" cellspacing="0" border="0" width="100%" class="tablehomepart5">
                     <tr>
-                        <td class="tdhomepart5 tdhomepart5_1">
-                            <div class="pagetitle7 padbot20">Get interesting updates and special offer</div>
-
-                            <form name="form_subscribe2" id="form_subscribe2" method="post" action="">
-                                <div class="header_search_box borderradius5" align="left">
-                                    <input type="hidden" name="search_flag" id="search_flag" value="1" />
-                                    <input type="text" id="email_subscribe"
-                                        class=" txtsearch search_input search_input_subscribe" name="email_subscribe" />
-                                    <input type="submit" class="emailsubscribebtn btnsearch borderradius5 animation"
-                                        name="emailsubscribebtn" id="emailsubscribebtn" value="BERLANGGANAN" />
-                                </div>
-                            </form>
-                        </td>
                         <td class="tdhomepart5 tdhomepart5_2">
+                            <center>
                             <div class="footer_socmed">
                                 <a href="https://www.facebook.com/percetakan.hrafeeymediantara.3" target="_blank"
                                     class="a_footersocmed"><img
                                         src="{{asset('storage/images/facebook_icon2.png')}}" /></a>
-                                <a href="https://www.twitter.com" target="_blank" class="a_footersocmed"><img
-                                        src="{{asset('storage/images/twitter_icon2.png')}}" /></a>
                                 <a href="https://www.instagram.com/harfeey_mediantara_official/" target="_blank"
                                     class="a_footersocmed"><img
                                         src="{{asset('storage/images/instagram_icon2.png')}}" /></a>
-                                <a href="https://www.linkedin.com" target="_blank" class="a_footersocmed"><img
-                                        src="{{asset('storage/images/linkedin_icon2.png')}}" /></a>
                                 <a href="https://wa.me/6287773000454" target="_blank" class="a_footersocmed"><img
                                         src="{{asset('storage/images/wa_icon2.png')}}" /></a>
+    </center>
                             </div>
                         </td>
                     </tr>
@@ -513,7 +421,7 @@
                             (0274) 2801021<br />
 
                             <div class="wf1_label">Mobile.</div>
-                            6287773000454
+                            +6287773000454
                         </div>
                     </div>
                 </td>
@@ -553,8 +461,7 @@
     </div>
     <div class="">
         <div class="container2">
-            <div class="pagedescription1 colorgrey padbot45">Harfeey adalah sebuah jasa percetakan digital (Digital
-                Printing) yang melayani berbagai kebutuhan cetak anda seperti stationary, promosi, signange, display
+            <div class="pagedescription1 colorgrey padbot45">Harfeey adalah sebuah jasa percetakan yang melayani berbagai kebutuhan cetak anda seperti stationary, promosi, signange, display
                 dll.
                 Kami memberikan kualitas cetak yang terjamin dengan harga yang kompetitif sehingga membantu anda lebih
                 efisien dalam mencetak keperluan anda.

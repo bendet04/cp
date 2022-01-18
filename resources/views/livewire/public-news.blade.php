@@ -7,7 +7,6 @@
             sliderName2 = $('.multi4Slider2').fSlider({
                 arrowPrevClass: 'fArrow-prev2', // provided for easy styling of arrows
                 arrowNextClass: 'fArrow-next2', // provided for easy styling of arrows
-            
 
                 numOfNextSlides: [1, 1, 1, 1],
                 responsive: true,

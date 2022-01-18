@@ -43,18 +43,21 @@
                             <div class="form-group">
                                 <label>Deskripsi</label>
                                 <div wire:ignore>
-                                    <textarea wire:model.defer="description" class="form-control"  id="description"  name="description">{!! $description !!}</textarea>                     
+                                    <textarea wire:model.defer="description" class="form-control" id="description"
+                                        name="description">{!! $description !!}</textarea>
                                 </div>
-         
-                                    <script src="//cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
-                                    <script>
-                                            const editor = CKEDITOR.replace('description');
-                                            editor.on('change', function(event){
-                                                @this.set('description', event.editor.getData());
-                                            })
-                                            editor.setData($('#description'))
 
-                                    </script>
+                                <script src="//cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+                                <script>
+                                    const editor = CKEDITOR.replace('description');
+                                    editor.on('change', function (event) {
+                                        @this.set('description', event.editor.getData());
+                                    })
+
+                                    window.addEventListener('edit-desc', event => {
+                                        editor.setData(event.detail.desc)
+                                    });
+                                </script>
                                 <span class="text-danger">@error('description')
                                     {{ $message }}
                                     @enderror</span>
@@ -89,7 +92,7 @@
                                     <td>{{ $value['name'] }}</td>
                                     <td>{{ $value['category']['name'] }}</td>
                                     <td>{{ $value['image'] }}</td>
-                                    <td>{{ $value['description'] }}</td>
+                                    <td>{{ strlen($value['description']) > 50 ? substr($value['description'],0,30)."..." : $value['description']; }}</td>
                                     <td>
                                         <button type="button" class="btn btn-primary"
                                             wire:click="edit({{$value['id']}})">Edit</button>

@@ -30,25 +30,25 @@
                                         <table cellpadding="0" cellspacing="0" border="0" class="table_dp_contact">
                                             <tr>
                                                 <td class="td_dp_contact td_dp_contact1">
-                                                    <img src="/images/phone_icon3.png" />
+                                                    <img src="{{asset('storage/images/phone_icon2.png')}}" />
                                                 </td>
                                                 <td class="td_dp_contact td_dp_contact2">
-                                                    (021) 82748265 </td>
+                                                (0274) 2801021 </td>
                                             </tr>
                                             <tr>
                                                 <td class="td_dp_contact td_dp_contact1">
-                                                    <img src="/images/wa_icon3.png" />
+                                                    <img src="{{asset('storage/images/wa_icon2.png')}}" />
                                                 </td>
                                                 <td class="td_dp_contact td_dp_contact2">
-                                                    6285899991818 </td>
+                                                +62877-7300-0454 </td>
                                             </tr>
                                             <tr>
                                                 <td class="td_dp_contact td_dp_contact1">
-                                                    <img src="/images/mail_icon3.png" />
+                                                    <img src="{{asset('storage/images/mail_icon.png')}}" />
                                                 </td>
                                                 <td class="td_dp_contact td_dp_contact2">
                                                     <a
-                                                        href="mailto:cetakandigital@gmail.com">cetakandigital@gmail.com</a>
+                                                        href="mailto:percetakanharfeey@gmail.com">percetakanharfeey@gmail.com</a>
                                                 </td>
                                             </tr>
                                         </table>
@@ -56,7 +56,7 @@
 
                                     <a href="https://wa.me/6285899991818">
                                         <div class="btn3 animationall borderradius5">
-                                            <div class="vm"><img src="/images/wa_icon4.png" /> Chat kami sekarang</div>
+                                            <div class="vm"><img src="{{asset('storage/images/wa_float.png')}}" /> Chat kami sekarang</div>
                                         </div>
                                     </a>
                                 </td>

@@ -71,6 +71,7 @@ class News extends Component
         $this->description = $product->description;
         $this->news_ckeditor = $product->description;
         $this->editing = True;
+        $this->dispatchBrowserEvent('edit-desc', ['desc' => $product->description]);
     }
 
     public function delete($id)
