@@ -189,7 +189,7 @@
                         <div class=""><img src="{{asset('storage/images/facebook_icon2.png')}}" /></div>
                     </div>
                 </a>
-                <a href="https://instagram.com/Harfeeydigital?igshid=n700f21pfeai" target="_blank">
+                <a href="https://www.instagram.com/harfeey_mediantara_official/" target="_blank">
                     <div class="socmed_point2m borderradius5 animation">
                         <div class=""><img src="{{asset('storage/images/instagram_icon2.png')}}" /></div>
                     </div>
@@ -461,7 +461,7 @@
     </div>
     <div class="">
         <div class="container2">
-            <div class="pagedescription1 colorgrey padbot45">Harfeey adalah sebuah jasa percetakan yang melayani berbagai kebutuhan cetak anda seperti stationary, promosi, signange, display
+            <div class="pagedescription1 colorgrey padbot45">Harfeey adalah sebuah jasa percetakan yang melayani berbagai kebutuhan cetak anda seperti buku novel, buku modul, buku kenangan, brosur, pamflet, stiker, sertifikat, cetak foto, spanduk  
                 dll.
                 Kami memberikan kualitas cetak yang terjamin dengan harga yang kompetitif sehingga membantu anda lebih
                 efisien dalam mencetak keperluan anda.

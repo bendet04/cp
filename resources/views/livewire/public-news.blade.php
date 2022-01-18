@@ -55,7 +55,7 @@
                             <div class="homepart1a_img">
                                 <img src="{{asset('storage/images/content/php_qv_6a_resized.png')}}"/>
                             </div>
-                            <div class="homepart1a_txt pagetitle7b">Pelayanan Digital Printing Yang Memuaskan</div>
+                            <div class="homepart1a_txt pagetitle7b">Pelayanan Yang Memuaskan</div>
                         </div>
                     </td>
                     <td class="tdhomepart1a">
@@ -63,7 +63,7 @@
                             <div class="homepart1a_img">
                                 <img src="{{asset('storage/images/content/phpyc3gj__resized.png')}}"/>
                             </div>
-                            <div class="homepart1a_txt pagetitle7b">Percetakan Murah Dengan Harga Kompetitif</div>
+                            <div class="homepart1a_txt pagetitle7b">Percetakan Dengan Harga Kompetitif</div>
                         </div>
                     </td>
                     <td class="tdhomepart1a">

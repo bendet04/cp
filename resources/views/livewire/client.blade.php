@@ -86,7 +86,7 @@
                             <img src="{{asset('storage/images/exhibitor/yayasan.jpg')}}" />
                         </div>
                     </div>
-                </div>
+                </div>  
             </div>
         </div>
     </div>
