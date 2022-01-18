@@ -12,12 +12,11 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @livewireStyles 
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
 </head>
 <body>
     <div id="app">
@@ -45,13 +44,10 @@
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
-
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
                         @else
+                            <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('news') }}">{{ __('News') }}</a>
+                                </li>
                              <li class="nav-item">
                                     <a class="nav-link" href="{{ route('products') }}">{{ __('Produk') }}</a>
                                 </li>
@@ -82,5 +78,7 @@
             @yield('content')
         </main>
     </div>
+    @livewireScripts
+
 </body>
 </html>

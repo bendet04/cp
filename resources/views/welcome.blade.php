@@ -332,10 +332,10 @@ function quickbuy_open(id){
             </form>
         </div>
 
-        <span class=""><a class="a_menutop" href="home">
+        <span class=""><a class="a_menutop" href="/">
             <div class="menu_point animation">Beranda</div>
         </a></span>
-        <!--<span class=""><a class="a_menutop" href="socialmedia"><div class="menu_point animation">Social Media</div></a></span>-->
+    
         <span class=""><a class="a_menutop" href="category/stationary">
             <div class="menu_point animation">Stationary</div>
         </a></span>
@@ -436,21 +436,6 @@ function quickbuy_open(id){
 </div>
 <div class="menuslidebackpart" id="menuslidebackpart"></div>
 
-<!--<script>
-    function framecontactdownload(id,language){
-        document.getElementById("framecontactdownloadid").src="framecontactdownload.php?id="+id+"&language="+language;
-        document.getElementById('popupindex2').style.display='block';document.getElementById('menuslidebackpart2').style.display='block';
-    }
-</script>
-
-<div class="menuslidebackpart" id="menuslidebackpart2" onclick="document.getElementById('popupindex2').style.display='none';document.getElementById('menuslidebackpart2').style.display='none';"></div>
-<div class="popupindex2" id="popupindex2">
-    <div class="popuppad2">
-        <div class="posrel100"><div class='posabs' style="width:100%;text-align:right;"><img src="{{asset('storage/images/close_btn2.png')}}" style="cursor:pointer;position:relative;top:-33px;right:10px;" onclick="document.getElementById('popupindex2').style.display='none';document.getElementById('menuslidebackpart2').style.display='none';" /></div></div>
-        <iframe id="framecontactdownloadid" name="framecontactdownloadid" class="framecontactdownload" frameborder="0" width="100%" src=""></iframe>
-    </div>
-</div>-->
-
 <script>
     $(document).ready(function () {
         var last_option_id = 0;
@@ -509,7 +494,7 @@ function quickbuy_open(id){
             <table cellpadding="0" cellspacing="0" border="0" width="100%" class="tableheader">
                 <tr>
                     <td class="tdheader tdheader1">
-                        <a href="home"><img src="{{asset('storage/images/logo.png')}}" class="logo"/></a>
+                        <a href="/"><img src="{{asset('storage/images/logo.png')}}" class="logo"/></a>
                     </td>
                     <td class="tdheader tdheader2">
                         <form name="formsearch" id="formsearch" method="get" action="/product">
@@ -547,26 +532,6 @@ function quickbuy_open(id){
                             </div>
                         </a>
                     </td>
-                    <!--<td class="tdheader tdheader5">
-                                                    <ul class="sf-menu" id="">
-                            <li class="current">
-                                <span class="lang_t">
-                                    <img src="{{asset('storage/images/world_icon.png')}}" class="lang_t_img1" />
-                                    <span class="lang_t_t1">ID</span>
-                                    <img src="{{asset('storage/images/arrow_down.png')}}" class="lang_t_img2" />
-                                </span>
-                                <ul style="">
-                                    <li style="margin-left:22px">
-                                        <div class="menupop menupoplang">
-
-                                            <a href="id/"><div class="headerddmenu headerddmenu2 animation"><div class="vm">ID</div></div></a>
-                                            <a href="en/"><div class="headerddmenu headerddmenu2 animation"><div class="vm">EN</div></div></a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </td>-->
                 </tr>
             </table>
         </div>
@@ -574,21 +539,10 @@ function quickbuy_open(id){
             <div class="container2">
                 <table cellpadding="0" cellspacing="0" border="0" width="100%" class="tableheaderbottom">
                     <tr>
-                        <td class="tdheaderbottom tdheaderbottom1">
-                            <a href="home" class="a_menupoint"><span class="menupoint">Home</span></a>
-                            <!--<a href="socialmedia" class="a_menupoint"><span class="menupoint">Social Media</span></a>-->
-                            <a href="category/stationary" class="a_menupoint"><span class="menupoint">Stationary</span></a>
-                            <a href="category/promotion" class="a_menupoint"><span
-                                    class="menupoint">Promotion</span></a>
-                            <a href="category/signage-display" class="a_menupoint"><span class="menupoint">Signage & Display</span></a>
-                            <a href="category/offset" class="a_menupoint"><span class="menupoint">Offset</span></a>
-                            <a href="category/others" class="a_menupoint"><span class="menupoint">Others</span></a>
-                        </td>
-                        <td class="tdheaderbottom tdheaderbottom2">
-                            <a href="client" class="a_menupoint"><span class="menupoint">Klien Kami</span></a>
-                            <a href="promo" class="a_menupoint"><span class="menupoint">Promosi</span></a>
-                            <a href="news" class="a_menupoint"><span class="menupoint">Artikel</span></a>
-                            <a href="about" class="a_menupoint"><span class="menupoint">Tentang Kami</span></a>
+                        <td class="tdheaderbottom tdheaderbottom3">
+                            <a href="/" class="a_menupoint center"><span class="menupoint">Home</span></a>
+                            <a href="produk" class="a_menupoint"><span class="menupoint">Produk</span></a>
+                            <a href="Profil" class="a_menupoint"><span class="menupoint">Profil</span></a>
                         </td>
                     </tr>
                 </table>
@@ -616,12 +570,7 @@ function quickbuy_open(id){
                         <a href="home"><img src="{{asset('storage/images/logo.png')}}" style="max-width:120px" class="headermlogo"/></a>
                     </td>
                     <td class="tdheaderm tdheaderm3">
-                        <!--<select class="mselecthead" name="langselectm" id="langselectm" onchange="document.location.href=this.value">
-                        	<option value="">ID</option>
-                            <option value="/en/">English</option>
-                            <option value="/id/">Indonesia</option>
-                        </select>
-                        -->&nbsp;
+                       &nbsp;
                     </td>
                 </tr>
             </table>
@@ -640,38 +589,11 @@ function quickbuy_open(id){
             sliderName2 = $('.multi4Slider2').fSlider({
                 arrowPrevClass: 'fArrow-prev2', // provided for easy styling of arrows
                 arrowNextClass: 'fArrow-next2', // provided for easy styling of arrows
-                /*autoplay: false,
-                 autoplaySpeed: 3000, // in ms
-                 adaptiveHeightOnResize: false,
-                 loop: true,
-                 callbacks: {
-                 beforeGoToSlide: function(){},
-                 noLoopAfterEndSlideClickArrow: function(){},
-                 afterchangeSlide: function(){}
-                 }, // can pass a function
-                 customizeDots: false, // can use thumbnails
-                 centerMode: true, // slidesToShow should always be 1 if centerMode is set true
-                 centerPadding: '0.2%', // center mode padding applied to current slide, pass in any style among '20%', '40' & '40px'
-                 showSiblingsHowMuch: 1.5, // 0.5 = show 50% width of the sibling slide, if value > 1, > 1 slides will be on each side of the center slide
-                 dots: false,
-                 drag: true,
-                 dynamicHeight: true, // if this is set false, default slider item vertical-align: middle
-                 setHeight: false, // setHeight to crop sliderItems which are too long
-                 widthHeightRatio: 0, // if setHeight is set true, you must provide this value
-                 defaultCurrentSlide: 0, // start from 0
-                 easing: 'easeOutExpo', // pass any jQuery easing
-                 numOfNextSlides: [1, 1], // for responsive, please pass an array, for non-responsive, pass either integer or array
-                 pauseOnHover: true,
-                 responsiveBreakPoint: [0, 960], // must include 0
-                 responsive: false,
-                 showArrows: true,
-                 slidesToShow: [1, 1], // for responsive, please pass an array, for non-responsive, pass either integer or array
-                 speed: 500 // in ms
-                 */
+            
 
                 numOfNextSlides: [1, 1, 1, 1],
                 responsive: true,
-                loop: true,
+                loop: false,
                 centerMode: true,
                 responsiveBreakPoint: [0, 480, 800, 1000],
                 slidesToShow: [1, 1, 1, 1],
@@ -679,13 +601,6 @@ function quickbuy_open(id){
                 dots: true,
                 centerPadding: '0%'
             });
-
-            //sliderName.fSlider('destroy'); or $('.multi4Slider').fSlider('destroy');
-
-            // return sliding movement direction: 'prev' or 'next'
-            //sliderName.fSlider('returnSlideDir'); or $('.multi4Slider').fSlider('returnSlideDir');
-
-            //$('.multi4Slider').fSlider('goToSlide', targetSlideIndex); // targetSlideIndex [integer]
 
         });
     </script>
@@ -698,48 +613,10 @@ function quickbuy_open(id){
                         <div class="homeproductdiv displayd640 borderradius5"
                              style="background:url({{asset('storage/images/banner/php_cvl88_resized.png')}}) no-repeat center center;background-size:cover;">
                         </div>
-                        <div class="homeproductdiv2 displaym640 borderradius5"
-                             style="background:url({{asset('storage/images/banner/phplhdpk__resized.png')}}) no-repeat center center;background-size:cover;">
-                        </div>
                     </a>
                 </div>
             </div>
-            <div class="sliderItem animationall">
-                <div class="sliderPad animationall">
-                    <a href="https://www.luprintz.com/socialmedia">
-                        <div class="homeproductdiv displayd640 borderradius5"
-                             style="background:url({{asset('storage/images/banner/phpsvy1ha_resized.png')}}) no-repeat center center;background-size:cover;">
-                        </div>
-                        <div class="homeproductdiv2 displaym640 borderradius5"
-                             style="background:url({{asset('storage/images/banner/phpi3_pxy_resized.png')}}) no-repeat center center;background-size:cover;">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="sliderItem animationall">
-                <div class="sliderPad animationall">
-                    <a href="#">
-                        <div class="homeproductdiv displayd640 borderradius5"
-                             style="background:url({{asset('storage/images/banner/phpy_pl3v_resized.png')}}) no-repeat center center;background-size:cover;">
-                        </div>
-                        <div class="homeproductdiv2 displaym640 borderradius5"
-                             style="background:url({{asset('storage/images/banner/phpw7copd_resized.png')}}) no-repeat center center;background-size:cover;">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="sliderItem animationall">
-                <div class="sliderPad animationall">
-                    <a href="#">
-                        <div class="homeproductdiv displayd640 borderradius5"
-                             style="background:url({{asset('storage/images/banner/phpobiz5__resized.png')}}) no-repeat center center;background-size:cover;">
-                        </div>
-                        <div class="homeproductdiv2 displaym640 borderradius5"
-                             style="background:url({{asset('storage/images/banner/phpuo6lj5_resized.png')}}) no-repeat center center;background-size:cover;">
-                        </div>
-                    </a>
-                </div>
-            </div>
+    
         </div>
     </div>
 </div>
@@ -794,7 +671,7 @@ function quickbuy_open(id){
         </center>
     </div>
 </div>
-
+@if(!empty($products))
 <div class="homepart2">
     <div class="container2">
         <div class="homepart2head">
@@ -802,6 +679,7 @@ function quickbuy_open(id){
         </div>
         <div class="homepart2body marginfit10px">
             <div class="padbot40">
+                @foreach($products as $product)
                 <div class="producttd">
                     <div class="producttdpad">
                         <a href="product/brosur">
@@ -817,141 +695,8 @@ function quickbuy_open(id){
                         </a>
                     </div>
                 </div>
-                <div class="producttd">
-                    <div class="producttdpad">
-                        <a href="product/poster">
-                            <div class="productborder borderradius5">
-                                <div class="productimgdiv topborderrad5"
-                                     style="background:url({{asset('storage/images/product/phpzu2p34_resized.png')}}) no-repeat center center;background-size:cover;"></div>
-                                <div class="producttxtdiv">
-                                    <div class="vm">
-                                        <div class="page_title7">Poster</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="producttd">
-                    <div class="producttdpad">
-                        <a href="product/digital-a3-">
-                            <div class="productborder borderradius5">
-                                <div class="productimgdiv topborderrad5"
-                                     style="background:url({{asset('storage/images/product/phpejozph_resized.png')}}) no-repeat center center;background-size:cover;"></div>
-                                <div class="producttxtdiv">
-                                    <div class="vm">
-                                        <div class="page_title7">Digital A3+</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="producttd">
-                    <div class="producttdpad">
-                        <a href="product/banner-indoor">
-                            <div class="productborder borderradius5">
-                                <div class="productimgdiv topborderrad5"
-                                     style="background:url({{asset('storage/images/product/phpoumy2i_resized.png')}}) no-repeat center center;background-size:cover;"></div>
-                                <div class="producttxtdiv">
-                                    <div class="vm">
-                                        <div class="page_title7">Banner Indoor</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="producttd">
-                    <div class="producttdpad">
-                        <a href="product/kartu-nama">
-                            <div class="productborder borderradius5">
-                                <div class="productimgdiv topborderrad5"
-                                     style="background:url({{asset('storage/images/product/php2boaa__resized.png')}}) no-repeat center center;background-size:cover;"></div>
-                                <div class="producttxtdiv">
-                                    <div class="vm">
-                                        <div class="page_title7">Kartu Nama</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="producttd">
-                    <div class="producttdpad">
-                        <a href="product/roll-up-banner">
-                            <div class="productborder borderradius5">
-                                <div class="productimgdiv topborderrad5"
-                                     style="background:url({{asset('storage/images/product/phpjp0g4f_resized.png')}}) no-repeat center center;background-size:cover;"></div>
-                                <div class="producttxtdiv">
-                                    <div class="vm">
-                                        <div class="page_title7">Roll Up Banner</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="producttd">
-                    <div class="producttdpad">
-                        <a href="product/tripod-banner">
-                            <div class="productborder borderradius5">
-                                <div class="productimgdiv topborderrad5"
-                                     style="background:url({{asset('storage/images/product/php4228ka_resized.png')}}) no-repeat center center;background-size:cover;"></div>
-                                <div class="producttxtdiv">
-                                    <div class="vm">
-                                        <div class="page_title7">Tripod Banner</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="producttd">
-                    <div class="producttdpad">
-                        <a href="product/kalender">
-                            <div class="productborder borderradius5">
-                                <div class="productimgdiv topborderrad5"
-                                     style="background:url({{asset('storage/images/product/phplbx0ll_resized.png')}}) no-repeat center center;background-size:cover;"></div>
-                                <div class="producttxtdiv">
-                                    <div class="vm">
-                                        <div class="page_title7">Kalender</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="producttd">
-                    <div class="producttdpad">
-                        <a href="product/x-banner">
-                            <div class="productborder borderradius5">
-                                <div class="productimgdiv topborderrad5"
-                                     style="background:url({{asset('storage/images/product/phpk_1__resized.png')}}) no-repeat center center;background-size:cover;"></div>
-                                <div class="producttxtdiv">
-                                    <div class="vm">
-                                        <div class="page_title7">X Banner</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="producttd">
-                    <div class="producttdpad">
-                        <a href="product/flyer">
-                            <div class="productborder borderradius5">
-                                <div class="productimgdiv topborderrad5"
-                                     style="background:url({{asset('storage/images/product/phpzqz4k7_resized.png')}}) no-repeat center center;background-size:cover;"></div>
-                                <div class="producttxtdiv">
-                                    <div class="vm">
-                                        <div class="page_title7">Flyer</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
             <div style="text-align:center"><a href="product"><input type="button"
                                                                     class="btn1 animationall borderradius5"
@@ -959,6 +704,7 @@ function quickbuy_open(id){
         </div>
     </div>
 </div>
+@endif
 
 <div class="homepart3">
     <div class="container2">
@@ -1183,21 +929,12 @@ function quickbuy_open(id){
     <div class="webfooterpart2">
         <table cellpadding="0" cellspacing="0" border="0" width="100%" class="tableheaderbottom">
             <tr>
-                <td class="tdheaderbottom tdheaderbottom1">
-                    <a href="home" class="a_menupoint"><span class="menupoint">Home</span></a>
-                    <a href="category/stationary" class="a_menupoint"><span class="menupoint">Stationary</span></a>
-                    <a href="category/promotion" class="a_menupoint"><span class="menupoint">Promotion</span></a>
-                    <a href="category/signage-display" class="a_menupoint"><span
-                            class="menupoint">Signage & Display</span></a>
-                    <a href="category/offset" class="a_menupoint"><span class="menupoint">Offset</span></a>
-                    <a href="category/others" class="a_menupoint"><span class="menupoint">Others</span></a>
+                <td class="tdheaderbottom tdheaderbottom3">
+                            <a href="/" class="a_menupoint center"><span class="menupoint">Home</span></a>
+                            <a href="produk" class="a_menupoint"><span class="menupoint">Produk</span></a>
+                            <a href="Profil" class="a_menupoint"><span class="menupoint">Profil</span></a>
                 </td>
-                <td class="tdheaderbottom tdheaderbottom2">
-                    <a href="client" class="a_menupoint"><span class="menupoint">Klien Kami</span></a>
-                    <a href="promo" class="a_menupoint"><span class="menupoint">Promosi</span></a>
-                    <a href="news" class="a_menupoint"><span class="menupoint">Artikel</span></a>
-                    <a href="about" class="a_menupoint"><span class="menupoint">Tentang Kami</span></a>
-                </td>
+               
             </tr>
         </table>
     </div>

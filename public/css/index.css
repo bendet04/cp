@@ -809,6 +809,10 @@ a.a_menupoint{
 	text-align:right;
 }
 
+.tableheaderbottom .tdheaderbottom3{
+	text-align:center;
+}
+
 .page_title0, .pagetitle0{
 	font-size:35px;
 }
@@ -1299,7 +1303,7 @@ a.a_menupoint{
 	padding:0px 10px;
 }
 .homeproductdiv{
-	height:31vw;
+	height:500px;
 	color:#fff;
 }
 .homeproductdiv2{
@@ -1322,6 +1326,12 @@ a.a_menupoint{
 	text-align:center;
 }
 .homepart1a_img{
+	display:inline-block;
+	vertical-align:middle;
+	width:50px;
+	padding-right:20px;
+}
+.homepart2a_img{
 	display:inline-block;
 	vertical-align:middle;
 	width:50px;
@@ -1372,7 +1382,7 @@ a.a_menupoint{
 	height:55px;
 }
 .homepart3{
-	background: linear-gradient(163.14deg, #10B0E0 -12.95%, #1694D3 -8.4%, #244AB2 76.37%);
+	background: linear-gradient(163.14deg, #17e010 -12.95%, #079436 -8.4%, #08801c 76.37%);
 	padding-top:100px;
 	padding-bottom:220px;
 	color:#fff;
