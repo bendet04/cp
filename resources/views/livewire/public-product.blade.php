@@ -16,7 +16,7 @@
                                 </div>
                                 <div class="producttxtdiv">
                                     <div class="vm">
-                                        <div class="page_title7">{{$product->category->name}}</div>
+                                        <div class="page_title7">{{$product->name}}</div>
                                     </div>
                                 </div>
                             </div>
