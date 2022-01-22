@@ -45,10 +45,10 @@
                             <a class="nav-link" href="{{ route('products') }}">{{ __('Produk') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('product-category') }}">{{ __('Kategory Produk') }}</a>
+                            <a class="nav-link" href="{{ route('product-category') }}">{{ __('Kategori Produk') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('news-category') }}">{{ __('Kategory Berita') }}</a>
+                            <a class="nav-link" href="{{ route('news-category') }}">{{ __('Kategori Berita') }}</a>
                         </li>
                         @endguest
                     </ul>

@@ -8,14 +8,14 @@
                 <div class="card-body">
                     <div class="row mb-4">
                         <div class="col-6">
-                            <div class="form-group">
+                            <div class="form-group mb-3">
                                 <label>Judul Berita</label>
                                 <input class="form-control" wire:model="name" placeholder="Nama">
                                 <span class="text-danger">@error('name')
                                     {{ $message }}
                                     @enderror</span>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group mb-3">
                                 <label>Kategori</label>
                                 <select class="form-control" wire:model="category">
                                     <option value="">Pilih</option>
@@ -29,7 +29,7 @@
                                     {{ $message }}
                                     @enderror</span>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group mb-3">
                                 <label>Foto</label>
                                 <input type="file" wire:model="image" name="image" class="form-control"
                                     placeholder="Foto">
@@ -40,7 +40,7 @@
                                     @enderror</span>
 
                             </div>
-                            <div class="form-group">
+                            <div class="form-group mb-3">
                                 <label>Deskripsi</label>
                                 <div wire:ignore>
                                     <textarea wire:model.defer="description" class="form-control" id="description"
@@ -62,13 +62,14 @@
                                     {{ $message }}
                                     @enderror</span>
                             </div>
-                            <div class="text-right mb-2">
+                            <div class="text-right mb-3 mt-3">
                                 <button type="button" class="btn btn-primary" wire:click="save">Simpan</button>
                             </div>
                         </div>
                         @if(!empty($image_name))
                         <div class="col-6">
-                            <img src="{{asset('storage/'.$image_name)}}" class="center" width="300" height="300" /></a>
+                        </br></br></br></br></br>
+                            <img src="{{asset('storage/'.$image_name)}}" class="rounded mx-auto d-block" width="300" height="300" /></a>
                         </div>
                     </div>
                     @endif
@@ -81,7 +82,7 @@
                                     <th>Kategori</th>
                                     <th>Foto</th>
                                     <th>Deskripsi</th>
-                                    <th>Aksi</th>
+                                    <th colspan="2">Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>

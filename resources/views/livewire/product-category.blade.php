@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <div class="row mb-4">
                         <div class="col-6">
-                            <div class="form-group">
+                            <div class="form-group mb-3">
                                 <label>Nama</label>
                                 <input class="form-control" wire:model="name" placeholder="Nama">
                                 <span class="text-danger">@error('name')
@@ -16,14 +16,14 @@
                                     @enderror</span>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group mb-3">
                                 <label>Deskripsi</label>
-                                <textarea wire:model="description" rows="4" cols="75"></textarea>
+                                <textarea wire:model="description" rows="4" cols="67"></textarea>
                                 <span class="text-danger">@error('description')
                                     {{ $message }}
                                     @enderror</span>
                             </div>
-                            <div class="text-right mb-2">
+                            <div class="text-right mb-3">
                                 <button type="button" class="btn btn-primary" wire:click="save">Simpan</button>
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                                     <th>No</th>
                                     <th>Nama Kategori</th>
                                     <th>Deskripsi</th>
-                                    <th>Aksi</th>
+                                    <th colspan="2">Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
