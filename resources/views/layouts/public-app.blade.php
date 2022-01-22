@@ -176,7 +176,7 @@
                 </a></span>
 
             <span class=""><a class="a_menutop" href="/produk">
-                    <div class="menu_point animation">Produk</div>
+                    <div class="menu_point animation">Layanan Cetak</div>
                 </a></span>
 
             <span class=""><a class="a_menutop" href="/profil">
@@ -280,7 +280,7 @@
                         </td>
                         <td class="tdheader tdheader2">
                                 <a href="/" class="a_menupoint center"><span class="menupoint">Beranda</span></a>
-                                <a href="/produk" class="a_menupoint"><span class="menupoint">Produk</span></a>
+                                <a href="/produk" class="a_menupoint"><span class="menupoint">Layanan Cetak</span></a>
                                 <a href="/profil" class="a_menupoint"><span class="menupoint">Tentang Kami</span></a>
                         </td>
                         <td class="tdheader tdheader2">
@@ -451,7 +451,7 @@
                 <tr>
                     <td class="tdheaderbottom tdheaderbottom3">
                         <a href="/" class="a_menupoint center"><span class="menupoint">Beranda</span></a>
-                        <a href="/produk" class="a_menupoint"><span class="menupoint">Produk</span></a>
+                        <a href="/produk" class="a_menupoint"><span class="menupoint">Layanan Cetak</span></a>
                         <a href="/profil" class="a_menupoint"><span class="menupoint">Tentang Kami</span></a>
                     </td>
 
