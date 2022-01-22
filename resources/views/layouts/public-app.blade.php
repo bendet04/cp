@@ -258,7 +258,7 @@
                             </td>
                             <td class="tdheadertop tdheadertop2">
                                 <span class="headertoppoint"><img src="{{asset('storage/images/hour_icon.png')}}" />
-                                    <span class="headertoptext">Senin - Sabtu | 09.00 - 18.00</span></span>
+                                    <span class="headertoptext">Senin - Sabtu | 08.00 - 16.00</span></span>
                                 <span>
                                     <a href="https://www.facebook.com/percetakan.hrafeeymediantara.3" target="_blank"
                                         class="a_headersocmed"><img
@@ -415,7 +415,7 @@
                                 Us</span>
                         </div>
                         <div class="wf1_p2 pagedescription1">
-                            Senin - Sabtu | 09.00 - 18.00<br />
+                            Senin - Sabtu | 08.00 - 16.00<br />
 
                             <div class="wf1_label">Phone.</div>
                             (0274) 2801021<br />
