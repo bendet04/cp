@@ -249,7 +249,7 @@
                         <tr>
                             <td class="tdheadertop tdheadertop1">
                                 <span class="headertoppoint"><img src="{{asset('storage/images/phone_icon.png')}}" />
-                                    <span class="headertoptext">6287773000454</span></span>
+                                    <span class="headertoptext">+6287773000454</span></span>
                                 <a target="_blank"
                                     href="https://www.google.com/maps/place/PT.+ESA+HARFEEY+MEDIANTARA/@-7.7684707,110.4244043,15z/data=!4m5!3m4!1s0x0:0x59e3d8ef6fd8e6dc!8m2!3d-7.7684707!4d110.4244043"
                                     <span class="headertoppoint"><img src="{{asset('storage/images/pin_icon.png')}}" />
