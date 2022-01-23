@@ -2,7 +2,7 @@
 <div class="homepart2">
     <div class="container2">
         <div class="homepart2head">
-            <div class="pagetitle2b padbot30">Produk</div>
+            <div class="pagetitle2b padbot30">Layanan Cetak</div>
         </div>
         <div class="homepart2body marginfit10px">
             <div class="padbot40">
