@@ -17,7 +17,7 @@
                     </div>
 
                     <div class="pagedescription1 padbot30">
-                        <p style="width:50px;">{{$product->description}}</p>
+                         {!! $product->description !!}
                     </div>
 
                     <div class=" padbot30">

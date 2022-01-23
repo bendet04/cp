@@ -48,10 +48,25 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label>Deskripsi</label>
-                                <textarea wire:model="description" rows="6" cols="68"></textarea>
+                                <div wire:ignore>
+                                    <textarea wire:model.defer="description" class="form-control" id="description"
+                                        name="description">{!! $description !!}</textarea>
+                                </div>
+
+                                <script src="//cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+                                <script>
+                                    const editor = CKEDITOR.replace('description');
+                                    editor.on('change', function (event) {
+                                        @this.set('description', event.editor.getData());
+                                    })
+
+                                    window.addEventListener('edit-desc', event => {
+                                        editor.setData(event.detail.desc)
+                                    });
+                                </script>
                                 <span class="text-danger">@error('description')
                                     {{ $message }}
-                                    @enderror</span>
+                                    @enderror</span>    
                             </div>
                             <div class="text-right mb-3">
                                 <button type="button" class="btn btn-primary" wire:click="save">Simpan</button>

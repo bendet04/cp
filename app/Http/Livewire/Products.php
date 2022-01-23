@@ -73,6 +73,7 @@ class Products extends Component
         $this->image_name = $product->image;
         $this->description = $product->description;
         $this->editing = True;
+        $this->dispatchBrowserEvent('edit-desc', ['desc' => $product->description]);
     }
 
     public function delete($id)
