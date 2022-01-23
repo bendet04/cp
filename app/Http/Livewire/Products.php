@@ -90,6 +90,7 @@ class Products extends Component
         $this->image_name = null;
         $this->description = null;
         $this->image=null;
+        $this->dispatchBrowserEvent('delete-desc');
     }
     
     public function updatedImage(){

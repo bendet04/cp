@@ -63,6 +63,9 @@
                                     window.addEventListener('edit-desc', event => {
                                         editor.setData(event.detail.desc)
                                     });
+                                    window.addEventListener('delete-desc', event => {
+                                        editor.setData()
+                                    });
                                 </script>
                                 <span class="text-danger">@error('description')
                                     {{ $message }}
