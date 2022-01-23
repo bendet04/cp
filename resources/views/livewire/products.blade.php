@@ -83,7 +83,7 @@
                                     <tr>
                                         <td>{{ $key+1 }}</td>
                                         <td>{{ $product['name'] }}</td>
-                                        <td>@if($product['category']['name'] != null) {{ $product['category']['name'] }} @endif</td>
+                                        <td>{{ $product['category']['name'] }}</td>
                                         <td>{{ $product['price'] }}</td>
                                         <td>{{ $product['image'] }}</td>
                                         <td>{{ strlen($product['description']) > 50 ? substr($product['description'],0,30)."..." : $product['description']; }}</td>
