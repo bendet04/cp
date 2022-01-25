@@ -81,7 +81,7 @@
                             <img src="{{asset('storage/images/exhibitor/pmmii.jpg')}}" />
                         </div>
                     </div>
-                    <div class="homepart4point">
+                    <div class="homepart6point">
                         <div class="vm">
                             <img src="{{asset('storage/images/exhibitor/yayasan.jpg')}}" />
                         </div>

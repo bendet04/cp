@@ -1420,15 +1420,25 @@ a.a_menupoint{
 	width:16.66%;
 	height:93px;
 }
-	.homepart4point img{
+.homepart4point img{
 		max-width:90%;
 		max-height:73px;
-	}
+}
 .homepart5a{
 	height:100px;
 }
 .homepart5{
 	padding-top:125px;
+}
+.homepart6point{
+	display:inline-block;
+	vertical-align:middle;
+	width:20%;
+	height:100px;
+}
+.homepart6point img{
+		max-width:90%;
+		max-height:73px;
 }
 .tablehomepart5 td.tdhomepart5{
 	
