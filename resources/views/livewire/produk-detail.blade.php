@@ -47,7 +47,7 @@
                         </table>
                     </div>
 
-                    <a href="https://wa.me/6285899991818">
+                    <a href="https://wa.me/6287773000454">
                         <div class="btn3 animationall borderradius5">
                             <div class="vm"><img src="{{asset('storage/images/wa_float.png')}}" /> Chat kami sekarang
                             </div>
