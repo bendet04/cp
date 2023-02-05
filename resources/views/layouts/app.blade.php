@@ -27,9 +27,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Harfeey
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -45,10 +43,16 @@
                             <a class="nav-link" href="{{ route('products') }}">{{ __('Produk') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('product-category') }}">{{ __('Kategori Produk') }}</a>
+                            <a class="nav-link" href="{{ route('books') }}">{{ __('Buku') }}</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('news-category') }}">{{ __('Kategori Berita') }}</a>
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                Kategori
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('product-category') }}">{{ __('Kategori Produk') }}</a>
+                                <a class="dropdown-item" href="{{ route('news-category') }}">{{ __('Kategori Berita') }}</a>
+                            </div>
                         </li>
                         @endguest
                     </ul>
@@ -64,8 +68,7 @@
                         @endif
                         @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>
 

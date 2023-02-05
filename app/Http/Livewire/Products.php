@@ -9,21 +9,24 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
 
 use Livewire\WithFileUploads;
+use Livewire\WithPagination;
 
 class Products extends Component
 {
     use WithFileUploads;
+    use WithPagination;
 
-    public $products = [] ;
-    public $categories = [] ;
+    protected $paginationTheme = 'bootstrap';
+
+    public $categories = [];
     public $editing = False;
     public $id_product, $name, $category, $price, $image, $image_name, $description;
 
     protected $rules = [
         'name' => 'required',
-        'category'=> 'required',
-        'price'=> 'required',
-        'image_name'=> 'required',
+        'category' => 'required',
+        'price' => 'required',
+        'image_name' => 'required',
         'description' => 'required'
     ];
 
@@ -34,30 +37,32 @@ class Products extends Component
 
     public function render()
     {
-        return view('livewire.products')->extends('layouts.app');
+        $products = ProductModel::with(['category']);
+
+        $products = $products->paginate(20);
+
+        return view('livewire.products', ['products' => $products])->extends('layouts.app');
     }
 
 
     public function loadList()
     {
-        $products = ProductModel::with(['category']);
-        
-        $products = $products->paginate(20);
-        $this->products = $products->items();
         $this->categories = ProductCategories::get();
     }
 
     public function save()
     {
         $this->validate();
-        $cust_id = ProductModel::updateOrCreate(['id'=>$this->id_product],
-        [
-            'name'=>$this->name,
-            'category_id'=>$this->category, 
-            'price'=>$this->price,
-            'image'=>$this->image_name,
-            'description'=>$this->description,    
-        ]);
+        $cust_id = ProductModel::updateOrCreate(
+            ['id' => $this->id_product],
+            [
+                'name' => $this->name,
+                'category_id' => $this->category,
+                'price' => $this->price,
+                'image' => $this->image_name,
+                'description' => $this->description,
+            ]
+        );
         $this->loadList();
         $this->clear();
         $this->editing = False;
@@ -89,16 +94,16 @@ class Products extends Component
         $this->price = null;
         $this->image_name = null;
         $this->description = null;
-        $this->image=null;
+        $this->image = null;
         $this->dispatchBrowserEvent('delete-desc');
     }
-    
-    public function updatedImage(){
+
+    public function updatedImage()
+    {
         $this->validate([
             'image' => 'mimes:pdf,png,jpg,jpeg|file|max:1024',
         ]);
-    
-        $this->image_name = str_replace('public','',$this->image->store('public'));
 
+        $this->image_name = str_replace('public', '', $this->image->store('public'));
     }
 }

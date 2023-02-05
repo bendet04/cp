@@ -9,20 +9,23 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
 
 use Livewire\WithFileUploads;
+use Livewire\WithPagination;
 
 class News extends Component
 {
     use WithFileUploads;
+    use WithPagination;
 
-    public $news = [] ;
     public $categories = [];
     public $editing = False;
     public $id_product, $name, $category,  $image, $image_name, $description, $news_ckeditor;
 
+    protected $paginationTheme = 'bootstrap';
+
     protected $rules = [
         'name' => 'required',
-        'category'=> 'required',
-        'image_name'=> 'required',
+        'category' => 'required',
+        'image_name' => 'required',
         'description' => 'required'
     ];
 
@@ -33,30 +36,30 @@ class News extends Component
 
     public function render()
     {
-        return view('livewire.news')->extends('layouts.app');
-        $this->openModal();
+        $news = NewsModel::with(['category']);
+        $news = $news->paginate(10);
+        return view('livewire.news', ['news_all' => $news])->extends('layouts.app');
     }
 
 
     public function loadList()
     {
-        $news = NewsModel::with(['category']);
-        $news = $news->paginate(20);
-        $this->news = $news->items();
         $this->categories = NewsCategories::get();
     }
 
     public function save()
     {
         $this->validate();
-        $cust_id = NewsModel::updateOrCreate(['id'=>$this->id_product],
-        [
-            'name'=>$this->name,
-            'category_id'=>$this->category, 
-            'image'=>$this->image_name,
-            'description'=>$this->description,    
-        ]);
-        $this->loadList();
+        NewsModel::updateOrCreate(
+            ['id' => $this->id_product],
+            [
+                'name' => $this->name,
+                'category_id' => $this->category,
+                'image' => $this->image_name,
+                'description' => $this->description,
+            ]
+        );
+
         $this->clear();
         $this->editing = False;
     }
@@ -77,7 +80,6 @@ class News extends Component
     public function delete($id)
     {
         NewsModel::where('id', $id)->delete();
-        $this->loadList();
     }
 
     public function clear()
@@ -86,16 +88,22 @@ class News extends Component
         $this->category = null;
         $this->image_name = null;
         $this->description = null;
-        $this->image=null;
+        $this->image = null;
         $this->dispatchBrowserEvent('delete-desc');
     }
-    
-    public function updatedImage(){
+
+    public function updatedImage()
+    {
+
         $this->validate([
             'image' => 'mimes:pdf,png,jpg,jpeg|file|max:1024',
         ]);
-    
-        $this->image_name = str_replace('public','',$this->image->store('public'));
 
+        $this->image_name = str_replace('public', '', $this->image->store('public'));
+    }
+
+    public function updatedName()
+    {
+        Log::info('test');
     }
 }

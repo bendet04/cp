@@ -66,7 +66,7 @@
                 document.getElementById("menu_product_hard").style.visibility = "hidden";
             }
         }
-        $(function () {
+        $(function() {
             $(".txtsearch").watermark("Cari Produk", "watermark");
             $("#email_subscribe").watermark("Masukkan email anda", "watermark");
         });
@@ -84,27 +84,27 @@
     </script>
     <script src="{{asset('js/activeheader.js?date=20200321')}}"></script>
     <script>
-        jQuery(document).ready(function ($) {
+        jQuery(document).ready(function($) {
             var menu_icon_flag = 0;
             var start_project_icon_flag = 0;
 
             //initiate posisi awal
             $("#menu_slide").animate({
                 left: "-425"
-            }, 0, function () {
+            }, 0, function() {
                 // Animation complete.
                 $("#menu_slide").fadeOut(0);
             });
 
 
             //icon menu click
-            $(".menuiconclick").click(function () {
+            $(".menuiconclick").click(function() {
                 if (menu_icon_flag == 0) {
                     $("#menu_slide").fadeIn(200);
                     $("#menuslidebackpart").fadeTo(500, 0.3);
                     $("#menu_slide").animate({
                         left: "0"
-                    }, 500, function () {
+                    }, 500, function() {
                         menu_icon_flag = 1;
                         // Animation complete.
                     });
@@ -112,10 +112,10 @@
             });
 
             //icon menu close click
-            $("#menuslidebackpart").click(function () {
+            $("#menuslidebackpart").click(function() {
                 $("#menu_slide").animate({
                     left: "-=425"
-                }, 500, function () {
+                }, 500, function() {
                     menu_icon_flag = 0;
                     // Animation complete.
                 });
@@ -123,12 +123,12 @@
                 $("#menuslidebackpart").fadeOut(500);
             });
 
-            $("#menu_icon_close").click(function () {
+            $("#menu_icon_close").click(function() {
                 $("#menu_slide").fadeOut(300);
                 $("#menuslidebackpart").fadeOut(300);
                 $("#menu_slide").animate({
                     left: "-=425"
-                }, 300, function () {
+                }, 300, function() {
                     menu_icon_flag = 0;
                     // Animation complete.
                 });
@@ -136,13 +136,12 @@
         });
     </script>
 </head>
+
 <body>
     <div class="">
         <div class="wa_float_icon">
-            <div class="displayd"><a href="https://wa.me/6287773000454" target="_blank"><img
-                        src="{{asset('storage/images/wa_float_long.png')}}" /></a></div>
-            <div class="displaym"><a href="https://wa.me/6287773000454" target="_blank"><img
-                        src="{{asset('storage/images/wa_float.png')}}" /></a>
+            <div class="displayd"><a href="https://wa.me/6287773000454" target="_blank"><img src="{{asset('storage/images/wa_float_long.png')}}" /></a></div>
+            <div class="displaym"><a href="https://wa.me/6287773000454" target="_blank"><img src="{{asset('storage/images/wa_float.png')}}" /></a>
             </div>
         </div>
     </div>
@@ -155,8 +154,7 @@
                         <a href="/"><img src="{{asset('storage/images/logo.png')}}" style="max-height:50px" /></a>
                     </td>
                     <td align="right" style="vertical-align:top">
-                        <img src="{{asset('storage/images/menu_icon_m2b.png')}}" class="menu_icon_img"
-                            id="menu_icon_close" />
+                        <img src="{{asset('storage/images/menu_icon_m2b.png')}}" class="menu_icon_img" id="menu_icon_close" />
                     </td>
                 </tr>
             </table>
@@ -165,7 +163,7 @@
         <div class="menuheadercontent">
             <script>
                 function togglemenuslideproduct() {
-                    $(function () {
+                    $(function() {
                         $("#menuslideproduct_id").slideToggle(500);
                     });
                 }
@@ -177,6 +175,10 @@
 
             <span class=""><a class="a_menutop" href="/produk">
                     <div class="menu_point animation">Layanan Cetak</div>
+                </a></span>
+
+            <span class=""><a class="a_menutop" href="/buku">
+                    <div class="menu_point animation">Buku</div>
                 </a></span>
 
             <span class=""><a class="a_menutop" href="/profil">
@@ -209,7 +211,7 @@
         <script>
             function socmedphonetxttoggle2() {
                 var status = document.getElementById("socmedphonetxt2").style.display;
-                jQuery(document).ready(function ($) {
+                jQuery(document).ready(function($) {
                     if (status == "block") {
                         $("#socmedphonetxt2").fadeOut(300);
                     } else {
@@ -224,9 +226,9 @@
     <div class="menuslidebackpart" id="menuslidebackpart"></div>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             var last_option_id = 0;
-            $('.headermenubtntrigger').click(function () {
+            $('.headermenubtntrigger').click(function() {
                 var id = $(this).data('value');
 
                 if (last_option_id == id) {
@@ -240,7 +242,7 @@
             });
         });
     </script>
-   
+
     <div class="menudisplayd">
         <div class="header  animationall" id="menuid">
             <div class="headertop">
@@ -250,9 +252,7 @@
                             <td class="tdheadertop tdheadertop1">
                                 <span class="headertoppoint"><img src="{{asset('storage/images/phone_icon.png')}}" />
                                     <span class="headertoptext">+6287773000454</span></span>
-                                <a target="_blank"
-                                    href="https://www.google.com/maps/place/PT.+ESA+HARFEEY+MEDIANTARA/@-7.7684707,110.4244043,15z/data=!4m5!3m4!1s0x0:0x59e3d8ef6fd8e6dc!8m2!3d-7.7684707!4d110.4244043"
-                                    <span class="headertoppoint"><img src="{{asset('storage/images/pin_icon.png')}}" />
+                                <a target="_blank" href="https://www.google.com/maps/place/PT.+ESA+HARFEEY+MEDIANTARA/@-7.7684707,110.4244043,15z/data=!4m5!3m4!1s0x0:0x59e3d8ef6fd8e6dc!8m2!3d-7.7684707!4d110.4244043" <span class="headertoppoint"><img src="{{asset('storage/images/pin_icon.png')}}" />
                                     <span class="headertoptext"> Jl. Nangka III No. 44C Pugeran, Maguwoharjo Kec. Depok
                                         Kab. Sleman – DIY</span></span> </a>
                             </td>
@@ -260,12 +260,8 @@
                                 <span class="headertoppoint"><img src="{{asset('storage/images/hour_icon.png')}}" />
                                     <span class="headertoptext">Senin - Sabtu | 08.00 - 16.00</span></span>
                                 <span>
-                                    <a href="https://www.facebook.com/percetakan.hrafeeymediantara.3" target="_blank"
-                                        class="a_headersocmed"><img
-                                            src="{{asset('storage/images/facebook_icon.png')}}" /></a>
-                                    <a href="https://www.instagram.com/harfeey_mediantara_official/" target="_blank"
-                                        class="a_headersocmed"><img
-                                            src="{{asset('storage/images/instagram_icon.png')}}" /></a>
+                                    <a href="https://www.facebook.com/percetakan.hrafeeymediantara.3" target="_blank" class="a_headersocmed"><img src="{{asset('storage/images/facebook_icon.png')}}" /></a>
+                                    <a href="https://www.instagram.com/harfeey_mediantara_official/" target="_blank" class="a_headersocmed"><img src="{{asset('storage/images/instagram_icon.png')}}" /></a>
                                 </span>
                             </td>
                         </tr>
@@ -279,20 +275,23 @@
                             <a href="/"><img src="{{asset('storage/images/logo.png')}}" class="logo" /></a>
                         </td>
                         <td class="tdheader tdheader2">
-                                <a href="/" class="a_menupoint center"><span class="menupoint">Beranda</span></a>
-                                <a href="/produk" class="a_menupoint"><span class="menupoint">Layanan Cetak</span></a>
-                                <a href="/profil" class="a_menupoint"><span class="menupoint">Tentang Kami</span></a>
+                            <a href="/" class="a_menupoint center"><span class="menupoint">Beranda</span></a>
+                            <a href="/produk" class="a_menupoint"><span class="menupoint">Layanan Cetak</span></a>
+                            <div class="dropdown">
+                                <a href="#" class="a_menupoint menubook"><span class="menupoint">Buku</span></a>
+                                <div class="dropdown-child">
+                                    <a href="/buku-terbit" class="a_menupoint menubook"><span class="menupoint">Buku sudah terbit</span></a>
+                                    <a href="/buku-akan-terbit" class="a_menupoint menubook"><span class="menupoint">Buku yang akan terbit</span></a>
+                                    <a href="/cari-buku" class="a_menupoint menubook"><span class="menupoint">Cari buku</span></a>
+                                </div>
+                            </div>
+                            <a href="/profil" class="a_menupoint"><span class="menupoint">Tentang Kami</span></a>
                         </td>
                         <td class="tdheader tdheader2">
                             <div class="footer_socmed">
-                                <a href="https://www.facebook.com/percetakan.hrafeeymediantara.3" target="_blank"
-                                    class="a_footersocmed"><img
-                                        src="{{asset('storage/images/facebook_icon2.png')}}" /></a>
-                                <a href="https://www.instagram.com/harfeey_mediantara_official/" target="_blank"
-                                    class="a_footersocmed"><img
-                                        src="{{asset('storage/images/instagram_icon2.png')}}" /></a>
-                                <a href="https://wa.me/6287773000454" target="_blank" class="a_footersocmed"><img
-                                        src="{{asset('storage/images/wa_icon2.png')}}" /></a>
+                                <a href="https://www.facebook.com/percetakan.hrafeeymediantara.3" target="_blank" class="a_footersocmed"><img src="{{asset('storage/images/facebook_icon2.png')}}" /></a>
+                                <a href="https://www.instagram.com/harfeey_mediantara_official/" target="_blank" class="a_footersocmed"><img src="{{asset('storage/images/instagram_icon2.png')}}" /></a>
+                                <a href="https://wa.me/6287773000454" target="_blank" class="a_footersocmed"><img src="{{asset('storage/images/wa_icon2.png')}}" /></a>
                             </div>
                         </td>
                     </tr>
@@ -317,8 +316,7 @@
                             </a>
                         </td>
                         <td class="tdheaderm tdheaderm1">
-                            <a href="/"><img src="{{asset('storage/images/logo.png')}}" style="max-width:120px"
-                                    class="headermlogo" /></a>
+                            <a href="/"><img src="{{asset('storage/images/logo.png')}}" style="max-width:120px" class="headermlogo" /></a>
                         </td>
                         <td class="tdheaderm tdheaderm3">
                             &nbsp;
@@ -345,8 +343,7 @@
                         <div class="producttdpad">
                             <a href="product/brosur">
                                 <div class="productborder borderradius5">
-                                    <div class="productimgdiv topborderrad5"
-                                        style="background:url({{asset('storage/'.$berita->image)}}) no-repeat center center;background-size:cover;">
+                                    <div class="productimgdiv topborderrad5" style="background:url({{asset('storage/'.$berita->image)}}) no-repeat center center;background-size:cover;">
                                     </div>
                                     <div class="producttxtdiv">
                                         <div class="vm">
@@ -360,8 +357,7 @@
                     @endforeach
 
                 </div>
-                <div style="text-align:center"><a href="product"><input type="button"
-                            class="btn1 animationall borderradius5" value="Lihat Semua Artikel" /></a></div>
+                <div style="text-align:center"><a href="product"><input type="button" class="btn1 animationall borderradius5" value="Lihat Semua Artikel" /></a></div>
             </div>
         </div>
     </div>
@@ -374,74 +370,66 @@
                     <tr>
                         <td class="tdhomepart5 tdhomepart5_2">
                             <center>
-                            <div class="footer_socmed">
-                                <a href="https://www.facebook.com/percetakan.hrafeeymediantara.3" target="_blank"
-                                    class="a_footersocmed"><img
-                                        src="{{asset('storage/images/facebook_icon2.png')}}" /></a>
-                                <a href="https://www.instagram.com/harfeey_mediantara_official/" target="_blank"
-                                    class="a_footersocmed"><img
-                                        src="{{asset('storage/images/instagram_icon2.png')}}" /></a>
-                                <a href="https://wa.me/6287773000454" target="_blank" class="a_footersocmed"><img
-                                        src="{{asset('storage/images/wa_icon2.png')}}" /></a>
-    </center>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+                                <div class="footer_socmed">
+                                    <a href="https://www.facebook.com/percetakan.hrafeeymediantara.3" target="_blank" class="a_footersocmed"><img src="{{asset('storage/images/facebook_icon2.png')}}" /></a>
+                                    <a href="https://www.instagram.com/harfeey_mediantara_official/" target="_blank" class="a_footersocmed"><img src="{{asset('storage/images/instagram_icon2.png')}}" /></a>
+                                    <a href="https://wa.me/6287773000454" target="_blank" class="a_footersocmed"><img src="{{asset('storage/images/wa_icon2.png')}}" /></a>
+                            </center>
             </div>
-
-            <div class="webfooterpart1">
-                <div class="wf1_border borderradius5">
-                    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="table_wf1">
-                        <tr>
-                            <td class="td_wf1 td_wf1_1">
-                                <div class="wf1_pad">
-                                    <div class="wf1_p1 padbot10">
-                                        <img src="{{asset('storage/images/pin_icon2.png')}}" /> <span
-                                            class="pagetitle4b">Location</span>
-                                    </div>
-                                    <a target="_blank"
-                                        href="https://www.google.com/maps/place/PT.+ESA+HARFEEY+MEDIANTARA/@-7.7684707,110.4244043,15z/data=!4m5!3m4!1s0x0:0x59e3d8ef6fd8e6dc!8m2!3d-7.7684707!4d110.4244043"
-                                        <div class="wf1_p2 pagedescription1"> Jl. Nangka III No. 44C Pugeran,
-                                        Maguwoharjo Kec. Depok Kab. Sleman – DIY
-                                </div>
-                                </a>
-                </div>
-                </td>
-                <td class="td_wf1 td_wf1_2">
-                    <div class="wf1_pad">
-                        <div class="wf1_p1 padbot10">
-                            <img src="{{asset('storage/images/phone_icon2.png')}}" /> <span class="pagetitle4b">Call
-                                Us</span>
-                        </div>
-                        <div class="wf1_p2 pagedescription1">
-                            Senin - Sabtu | 08.00 - 16.00<br />
-
-                            <div class="wf1_label">Phone.</div>
-                            (0274) 2801021<br />
-
-                            <div class="wf1_label">Mobile.</div>
-                            +6287773000454
-                        </div>
-                    </div>
-                </td>
-                <td class="td_wf1 td_wf1_3">
-                    <div class="wf1_pad">
-                        <div class="wf1_p1 padbot10">
-                            <img src="{{asset('storage/images/mail_icon.png')}}" /> <span class="pagetitle4b">Mail
-                                Us</span>
-                        </div>
-                        <div class="wf1_p2 pagedescription1">
-                            <div class="wf1_label">Email.</div>
-                            <a href="mailto:percetakanharfeey@gmail.com">percetakanharfeey@gmail.com</a><br />
-
-                        </div>
-                    </div>
-                </td>
-                </tr>
-                </table>
-            </div>
+            </td>
+            </tr>
+            </table>
         </div>
+
+        <div class="webfooterpart1">
+            <div class="wf1_border borderradius5">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="table_wf1">
+                    <tr>
+                        <td class="td_wf1 td_wf1_1">
+                            <div class="wf1_pad">
+                                <div class="wf1_p1 padbot10">
+                                    <img src="{{asset('storage/images/pin_icon2.png')}}" /> <span class="pagetitle4b">Location</span>
+                                </div>
+                                <a target="_blank" href="https://www.google.com/maps/place/PT.+ESA+HARFEEY+MEDIANTARA/@-7.7684707,110.4244043,15z/data=!4m5!3m4!1s0x0:0x59e3d8ef6fd8e6dc!8m2!3d-7.7684707!4d110.4244043" <div class="wf1_p2 pagedescription1"> Jl. Nangka III No. 44C Pugeran,
+                                    Maguwoharjo Kec. Depok Kab. Sleman – DIY
+                            </div>
+                            </a>
+            </div>
+            </td>
+            <td class="td_wf1 td_wf1_2">
+                <div class="wf1_pad">
+                    <div class="wf1_p1 padbot10">
+                        <img src="{{asset('storage/images/phone_icon2.png')}}" /> <span class="pagetitle4b">Call
+                            Us</span>
+                    </div>
+                    <div class="wf1_p2 pagedescription1">
+                        Senin - Sabtu | 08.00 - 16.00<br />
+
+                        <div class="wf1_label">Phone.</div>
+                        (0274) 2801021<br />
+
+                        <div class="wf1_label">Mobile.</div>
+                        +6287773000454
+                    </div>
+                </div>
+            </td>
+            <td class="td_wf1 td_wf1_3">
+                <div class="wf1_pad">
+                    <div class="wf1_p1 padbot10">
+                        <img src="{{asset('storage/images/mail_icon.png')}}" /> <span class="pagetitle4b">Mail
+                            Us</span>
+                    </div>
+                    <div class="wf1_p2 pagedescription1">
+                        <div class="wf1_label">Email.</div>
+                        <a href="mailto:percetakanharfeey@gmail.com">percetakanharfeey@gmail.com</a><br />
+
+                    </div>
+                </div>
+            </td>
+            </tr>
+            </table>
+        </div>
+    </div>
     </div>
     </div>
 
@@ -461,7 +449,7 @@
     </div>
     <div class="">
         <div class="container2">
-            <div class="pagedescription1 colorgrey padbot45">Harfeey adalah sebuah jasa percetakan yang melayani berbagai kebutuhan cetak anda seperti buku novel, buku modul, buku kenangan, brosur, pamflet, stiker, sertifikat, cetak foto, spanduk  
+            <div class="pagedescription1 colorgrey padbot45">Harfeey adalah sebuah jasa percetakan yang melayani berbagai kebutuhan cetak anda seperti buku novel, buku modul, buku kenangan, brosur, pamflet, stiker, sertifikat, cetak foto, spanduk
                 dll.
                 Kami memberikan kualitas cetak yang terjamin dengan harga yang kompetitif sehingga membantu anda lebih
                 efisien dalam mencetak keperluan anda.
@@ -471,7 +459,7 @@
             </div>
         </div>
     </div>
-
+    @livewireScripts
 </body>
 
 </html>

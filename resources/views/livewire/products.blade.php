@@ -21,7 +21,7 @@
                                     <option value="">Pilih</option>
                                     @if($categories)
                                     @foreach($categories as $category)
-                                        <option value="{{$category->id}}">{{$category->name}}</option>
+                                    <option value="{{$category->id}}">{{$category->name}}</option>
                                     @endforeach
                                     @endif
                                 </select>
@@ -44,19 +44,18 @@
                                 <span class="text-danger">@error('image_name')
                                     {{ $message }}
                                     @enderror</span>
-                                
+
                             </div>
                             <div class="form-group mb-3">
                                 <label>Deskripsi</label>
                                 <div wire:ignore>
-                                    <textarea wire:model.defer="description" class="form-control" id="description"
-                                        name="description">{!! $description !!}</textarea>
+                                    <textarea wire:model.defer="description" class="form-control" id="description" name="description">{!! $description !!}</textarea>
                                 </div>
 
                                 <script src="//cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
                                 <script>
                                     const editor = CKEDITOR.replace('description');
-                                    editor.on('change', function (event) {
+                                    editor.on('change', function(event) {
                                         @this.set('description', event.editor.getData());
                                     })
 
@@ -69,18 +68,17 @@
                                 </script>
                                 <span class="text-danger">@error('description')
                                     {{ $message }}
-                                    @enderror</span>    
+                                    @enderror</span>
                             </div>
                             <div class="text-right mb-3">
                                 <button type="button" class="btn btn-primary" wire:click="save">Simpan</button>
                             </div>
                         </div>
                         @if(!empty($image_name))
-                            <div class="col-6 mb-3">
+                        <div class="col-6 mb-3">
                             </br></br></br></br>
-                            <img src="{{asset('storage/'.$image_name)}}" class="rounded mx-auto d-block" width="300"
-                                                height="300" /></a>
-                            </div>
+                            <img src="{{asset('storage/'.$image_name)}}" class="rounded mx-auto d-block" width="300" height="300" /></a>
+                        </div>
                         @endif
                         <div class="table-responsive">
                             <table id="example1" class="table table-bordered table-striped text-center">
@@ -106,12 +104,10 @@
                                         <td>{{ $product['image'] }}</td>
                                         <td>{{ strlen($product['description']) > 50 ? substr($product['description'],0,30)."..." : $product['description']; }}</td>
                                         <td>
-                                            <button type="button" class="btn btn-primary"
-                                                wire:click="edit({{$product['id']}})">Edit</button>
+                                            <button type="button" class="btn btn-primary" wire:click="edit({{$product['id']}})">Edit</button>
                                         </td>
                                         <td>
-                                            <button type="button" class="btn btn-danger"
-                                                wire:click="delete({{$product['id']}})">Hapus</button>
+                                            <button type="button" class="btn btn-danger" wire:click="delete({{$product['id']}})">Hapus</button>
                                         </td>
                                     </tr>
                                     @endforeach

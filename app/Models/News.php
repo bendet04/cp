@@ -8,9 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class News extends Model
 {
     use HasFactory;
-    protected $fillable = ['name','category_id','image','description'];
+    protected $fillable = ['name', 'category_id', 'image', 'description'];
 
-    public function category(){
+    public function category()
+    {
         return $this->belongsTo(NewsCategories::class);
     }
 }

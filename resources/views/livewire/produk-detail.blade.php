@@ -4,12 +4,11 @@
             <tr>
                 <td class="tdproductpart2 tdproductpart2_1">
                     <div class="main_image_div" id="main_image_div" align="center">
-                        <img src="{{asset('storage/'.$product->image)}}" class="imgproduct imgdp borderradius5"
-                            id="zoom_01" data-zoom-image="/images/product/phpzqz4k7_resized.png" /> </div>
+                        <img src="{{asset('storage/'.$product->image)}}" class="imgproduct imgdp borderradius5" id="zoom_01" data-zoom-image="/images/product/phpzqz4k7_resized.png" />
+                    </div>
                     <div style="height:10px"></div>
                 </td>
                 <td class="tdproductpart2 tdproductpart2_2 ">
-                    <div class="padbot40"></div>
                     <div class="pagetitle3b padbot20">{{$product->name}}</div>
 
                     <div class="padbot15">
@@ -17,7 +16,7 @@
                     </div>
 
                     <div class="pagedescription1 padbot30">
-                         {!! $product->description !!}
+                        {!! $product->description !!}
                     </div>
 
                     <div class=" padbot30">

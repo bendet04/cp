@@ -31,10 +31,10 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label>Foto</label>
-                                <input type="file" wire:model="image" name="image" class="form-control"
-                                    placeholder="Foto">
+                                <input type="file" wire:model="image" name="image" class="form-control" placeholder="Foto">
                                 @if($editing)<small class="form-text text-muted">Kosongkan jika tidak
-                                    dirubah.</small>@endif
+                                    dirubah.</small>
+                                @endif
                                 <span class="text-danger">@error('image_name')
                                     {{ $message }}
                                     @enderror</span>
@@ -43,14 +43,13 @@
                             <div class="form-group mb-3">
                                 <label>Deskripsi</label>
                                 <div wire:ignore>
-                                    <textarea wire:model.defer="description" class="form-control" id="description"
-                                        name="description">{!! $description !!}</textarea>
+                                    <textarea wire:model.defer="description" class="form-control" id="description" name="description">{!! $description !!}</textarea>
                                 </div>
 
                                 <script src="//cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
                                 <script>
                                     const editor = CKEDITOR.replace('description');
-                                    editor.on('change', function (event) {
+                                    editor.on('change', function(event) {
                                         @this.set('description', event.editor.getData());
                                     })
 
@@ -71,7 +70,7 @@
                         </div>
                         @if(!empty($image_name))
                         <div class="col-6">
-                        </br></br></br></br></br>
+                            </br></br></br></br></br>
                             <img src="{{asset('storage/'.$image_name)}}" class="rounded mx-auto d-block" width="300" height="300" /></a>
                         </div>
                     </div>
@@ -89,8 +88,8 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @if(!empty($news))
-                                @foreach($news as $key => $value)
+                                @if(!empty($news_all))
+                                @foreach($news_all as $key => $value)
                                 <tr>
                                     <td>{{ $key+1 }}</td>
                                     <td>{{ $value['name'] }}</td>
@@ -98,19 +97,19 @@
                                     <td>{{ $value['image'] }}</td>
                                     <td>{{ strlen($value['description']) > 50 ? substr($value['description'],0,30)."..." : $value['description']; }}</td>
                                     <td>
-                                        <button type="button" class="btn btn-primary"
-                                            wire:click="edit({{$value['id']}})">Edit</button>
+                                        <button type="button" class="btn btn-primary" wire:click="edit({{$value['id']}})">Edit</button>
                                     </td>
                                     <td>
-                                        <button type="button" class="btn btn-danger"
-                                            wire:click="delete({{$value['id']}})">Hapus</button>
+                                        <button type="button" class="btn btn-danger" wire:click="delete({{$value['id']}})">Hapus</button>
                                     </td>
                                 </tr>
                                 @endforeach
                                 @endif
                             </tbody>
                         </table>
+                        {{ $news_all->links() }}
                     </div>
+
                 </div>
             </div>
         </div>

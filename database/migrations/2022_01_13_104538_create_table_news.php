@@ -30,6 +30,6 @@ class CreateTableNews extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_news');
+        Schema::dropIfExists('news');
     }
 }
